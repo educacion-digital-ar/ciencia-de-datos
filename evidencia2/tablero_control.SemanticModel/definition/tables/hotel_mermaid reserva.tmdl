@@ -1,0 +1,82 @@
+table 'hotel_mermaid reserva'
+	lineageTag: cb2e0e9f-084b-4c1e-9d9f-9f575cd66089
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 9687879f-099a-43a5-8ebd-fda6b63a873b
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 27e81189-eee5-4603-82ac-6a0e41e2178c
+		summarizeBy: sum
+		sourceColumn: cliente_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_check_in
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b3198372-224c-4e5b-a2fc-dff486b7ccb4
+		summarizeBy: none
+		sourceColumn: fecha_check_in
+
+		variation Variación
+			isDefault
+			relationship: 8166abd0-6a87-4a73-8b9a-cdda7375d995
+			defaultHierarchy: LocalDateTable_ed8c86c8-5162-47ca-958a-c3bc540f0d11.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_check_out
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 08d64c35-7679-469b-a4ae-bc62714a8b72
+		summarizeBy: none
+		sourceColumn: fecha_check_out
+
+		variation Variación
+			isDefault
+			relationship: 4e8d9adf-c2c3-47ff-9c5e-9b7139fcf4f4
+			defaultHierarchy: LocalDateTable_5c7f7136-e9bb-4d01-ac42-7772d94ac7ad.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column duracion_estadia
+		dataType: int64
+		formatString: 0
+		lineageTag: c0987030-9014-4d6d-b196-0473bd53dd4c
+		summarizeBy: sum
+		sourceColumn: duracion_estadia
+
+		annotation SummarizationSetBy = Automatic
+
+	column habitacion_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4bf07614-d84e-4b74-8f48-09528b540ffc
+		summarizeBy: none
+		sourceColumn: habitacion_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'hotel_mermaid reserva' = m
+		mode: import
+		source =
+				let
+				    Origen = MySQL.Database("127.0.0.1", "hotel_mermaid", [ReturnSingleDatabase=true]),
+				    hotel_mermaid_reserva = Origen{[Schema="hotel_mermaid",Item="reserva"]}[Data]
+				in
+				    hotel_mermaid_reserva
+
+	annotation PBI_ResultType = Table
+

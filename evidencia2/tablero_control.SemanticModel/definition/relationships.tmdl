@@ -1,0 +1,133 @@
+relationship ced85004-a60b-404b-92f8-015a8a460a65
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'hotel_mermaid opinion'.fecha
+	toColumn: LocalDateTable_7eb099a0-da3d-424b-b1f8-83edb4781b53.Date
+
+relationship 966cb1d3-8441-42f6-b506-13ab0f3cf9b3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'hotel_mermaid pago'.fecha_pago
+	toColumn: LocalDateTable_40ab87c8-83c8-4b49-bd63-c98e9798ea0f.Date
+
+relationship 8166abd0-6a87-4a73-8b9a-cdda7375d995
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'hotel_mermaid reserva'.fecha_check_in
+	toColumn: LocalDateTable_ed8c86c8-5162-47ca-958a-c3bc540f0d11.Date
+
+relationship 4e8d9adf-c2c3-47ff-9c5e-9b7139fcf4f4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'hotel_mermaid reserva'.fecha_check_out
+	toColumn: LocalDateTable_5c7f7136-e9bb-4d01-ac42-7772d94ac7ad.Date
+
+relationship aa64021b-4a3b-4114-b0a7-b0ea70050e31
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid cliente'.genero_id
+	toColumn: 'hotel_mermaid genero'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship c56e9911-0ce1-44f0-b3a4-63dd6013c396
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid cliente'.nacionalidad_id
+	toColumn: 'hotel_mermaid nacionalidad'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 3f5b3e65-3de6-4f93-9f8e-e4f0c94eff47
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid habitacion'.tipo_id
+	toColumn: 'hotel_mermaid tipohabitacion'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 03a96de5-4d0d-4d31-8e22-abe0e9555be9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid habitacion'.ubicacion_preferida_id
+	toColumn: 'hotel_mermaid ubicacionpreferida'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 32295e84-0fab-4ce8-8e15-c8c53905b8ed
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid opinion'.cliente_id
+	toColumn: 'hotel_mermaid cliente'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 9ab9b831-79df-46db-bd3b-fea758243f56
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid opinion'.reserva_id
+	toColumn: 'hotel_mermaid reserva'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 558eff97-bded-49d3-a497-4fc6eb6d507a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid pago'.metodo_pago_id
+	toColumn: 'hotel_mermaid metodopago'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 0ce83871-5105-461e-897e-85725eb306d4
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid pago'.reserva_id
+	toColumn: 'hotel_mermaid reserva'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 04071602-3843-4a36-8521-7678f8327c01
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid preferenciacliente'.cliente_id
+	toColumn: 'hotel_mermaid cliente'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship dd11f584-4a9d-446f-94a1-11e364837493
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid preferenciacliente'.preferencia_especial_id
+	toColumn: 'hotel_mermaid preferenciaespecial'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship d0c2cd06-b962-4f5e-a5c3-c1c94c897b94
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid reserva'.cliente_id
+	toColumn: 'hotel_mermaid cliente'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 115f0253-fbf1-445c-8c71-f29933225f8a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid reserva'.habitacion_id
+	toColumn: 'hotel_mermaid habitacion'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship c37e04c3-85c4-45cb-b503-dbdad4602ecf
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid servicioreservado'.reserva_id
+	toColumn: 'hotel_mermaid reserva'.id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 38e652fa-9cee-4dd4-a104-a8a84e877c96
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'hotel_mermaid servicioreservado'.servicio_id
+	toColumn: 'hotel_mermaid servicio'.id
+
+	annotation PBI_IsFromSource = FS
+

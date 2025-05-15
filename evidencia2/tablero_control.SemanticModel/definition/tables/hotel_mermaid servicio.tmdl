@@ -1,0 +1,31 @@
+table 'hotel_mermaid servicio'
+	lineageTag: 5ed0e996-208a-4f2c-a163-9d5df5543b72
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: ddd9d600-76b2-436e-be56-9830223fdea1
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre
+		dataType: string
+		lineageTag: 80f6bcaa-fce4-4039-8256-f8d2908a38f7
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'hotel_mermaid servicio' = m
+		mode: import
+		source =
+				let
+				    Origen = MySQL.Database("127.0.0.1", "hotel_mermaid", [ReturnSingleDatabase=true]),
+				    hotel_mermaid_servicio = Origen{[Schema="hotel_mermaid",Item="servicio"]}[Data]
+				in
+				    hotel_mermaid_servicio
+
+	annotation PBI_ResultType = Table
+

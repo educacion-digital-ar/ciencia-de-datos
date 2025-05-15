@@ -1,0 +1,38 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-AR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["hotel_mermaid cliente","hotel_mermaid genero","hotel_mermaid habitacion","hotel_mermaid metodopago","hotel_mermaid nacionalidad","hotel_mermaid opinion","hotel_mermaid pago","hotel_mermaid preferenciacliente","hotel_mermaid preferenciaespecial","hotel_mermaid reserva","hotel_mermaid servicio","hotel_mermaid servicioreservado","hotel_mermaid tipohabitacion","hotel_mermaid ubicacionpreferida"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'hotel_mermaid cliente'
+ref table 'hotel_mermaid genero'
+ref table 'hotel_mermaid habitacion'
+ref table 'hotel_mermaid metodopago'
+ref table 'hotel_mermaid nacionalidad'
+ref table 'hotel_mermaid opinion'
+ref table DateTableTemplate_42c38349-492d-40c1-b878-d66962271835
+ref table LocalDateTable_7eb099a0-da3d-424b-b1f8-83edb4781b53
+ref table 'hotel_mermaid pago'
+ref table LocalDateTable_40ab87c8-83c8-4b49-bd63-c98e9798ea0f
+ref table 'hotel_mermaid preferenciacliente'
+ref table 'hotel_mermaid preferenciaespecial'
+ref table 'hotel_mermaid reserva'
+ref table LocalDateTable_ed8c86c8-5162-47ca-958a-c3bc540f0d11
+ref table LocalDateTable_5c7f7136-e9bb-4d01-ac42-7772d94ac7ad
+ref table 'hotel_mermaid servicio'
+ref table 'hotel_mermaid servicioreservado'
+ref table 'hotel_mermaid tipohabitacion'
+ref table 'hotel_mermaid ubicacionpreferida'
+
+ref cultureInfo es-ES
+

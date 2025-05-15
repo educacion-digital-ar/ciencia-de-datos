@@ -1,0 +1,41 @@
+table 'hotel_mermaid preferenciacliente'
+	lineageTag: ea279f91-d282-43be-abb4-114475e1f2a5
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8f33ddbf-ec76-4812-84be-4b3da82229b7
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f73148b-caf2-45eb-884f-46aadce3fe12
+		summarizeBy: none
+		sourceColumn: cliente_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferencia_especial_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f6087ced-7342-4db1-a668-357be9655aa6
+		summarizeBy: none
+		sourceColumn: preferencia_especial_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'hotel_mermaid preferenciacliente' = m
+		mode: import
+		source =
+				let
+				    Origen = MySQL.Database("127.0.0.1", "hotel_mermaid", [ReturnSingleDatabase=true]),
+				    hotel_mermaid_preferenciacliente = Origen{[Schema="hotel_mermaid",Item="preferenciacliente"]}[Data]
+				in
+				    hotel_mermaid_preferenciacliente
+
+	annotation PBI_ResultType = Table
+
