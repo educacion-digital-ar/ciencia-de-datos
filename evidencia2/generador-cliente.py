@@ -29,7 +29,7 @@ df_cliente = pd.DataFrame(clientes)
 
 # --------------- HABITACIONES ---------------
 num_habitaciones = 200
-tipos_habitacion = [1, 2, 3]
+tipos_habitacion = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 df_habitacion = pd.DataFrame([{
     'id': i,
     'tipo_id': random.choice(tipos_habitacion),
@@ -37,7 +37,7 @@ df_habitacion = pd.DataFrame([{
 } for i in range(1, num_habitaciones + 1)])
 
 # --------------- RESERVAS ---------------
-tipo_cliente_ids = [1, 2, 3]
+tipo_cliente_ids = [1, 2, 3, 4, 5]
 num_reservas = 200
 reservas = []
 
@@ -56,7 +56,7 @@ for i in range(1, num_reservas + 1):
 df_reserva = pd.DataFrame(reservas)
 
 # --------------- FACTURACIÓN ---------------
-metodo_pago_ids = [1, 2, 3]
+metodo_pago_ids = [1, 2, 3, 4, 5]
 estado_pago_ids = [1, 2]
 facturacion = []
 
@@ -97,7 +97,7 @@ df_opinion = pd.DataFrame([{
 df_servicio_reservado = pd.DataFrame([{
     'id': i,
     'reserva_id': random.randint(1, num_reservas),
-    'servicio_id': random.randint(1, 6)
+    'servicio_id': random.randint(1, 4)
 } for i in range(1, 201)])
 
 # Guardar todos los DataFrames en un solo Excel
