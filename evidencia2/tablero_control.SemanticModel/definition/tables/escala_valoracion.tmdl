@@ -1,0 +1,42 @@
+table escala_valoracion
+	lineageTag: e5ae5c91-84b7-4158-b910-6c01dcfc7fef
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f65c34f-e5be-4b95-abd1-93a967e5bba3
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntuacion
+		dataType: string
+		lineageTag: 08f8333f-af62-4f43-911a-0cbe4ce4832b
+		summarizeBy: none
+		sourceColumn: puntuacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column descripcion
+		dataType: int64
+		formatString: 0
+		lineageTag: 94c4063f-d4dc-4439-88f6-5e5bc94fa733
+		summarizeBy: sum
+		sourceColumn: descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition escala_valoracion = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    escala_valoracion_Sheet = Origen{[Item="escala_valoracion",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(escala_valoracion_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"puntuacion", type text}, {"descripcion", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

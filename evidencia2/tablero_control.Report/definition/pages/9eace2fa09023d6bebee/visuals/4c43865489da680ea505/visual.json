@@ -1,0 +1,145 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "4c43865489da680ea505",
+  "position": {
+    "x": 871.66666666666674,
+    "y": 30,
+    "z": 3000,
+    "height": 296.66666666666669,
+    "width": 398.33333333333337,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "facturacion"
+                    }
+                  },
+                  "Property": "mesAnio"
+                }
+              },
+              "queryRef": "facturacion.mesAnio",
+              "nativeQueryRef": "mesAnio",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "tipo_cliente"
+                    }
+                  },
+                  "Property": "tipo_cliente"
+                }
+              },
+              "queryRef": "tipo_cliente.tipo_cliente",
+              "nativeQueryRef": "tipo_cliente"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "facturacion"
+                        }
+                      },
+                      "Property": "monto"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(facturacion.monto)",
+              "nativeQueryRef": "Suma de monto"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "facturacion"
+                      }
+                    },
+                    "Property": "monto"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading2'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Facturación Mensual por Tipo de Cliente'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "divider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

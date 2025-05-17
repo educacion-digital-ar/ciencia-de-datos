@@ -1,0 +1,79 @@
+table reserva
+	lineageTag: 7f998a73-106b-40c4-a6df-1d6cb19166cd
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7534f75f-8e2b-4ece-86fe-13f00de2a30a
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 48093afb-06c1-46ef-b0e7-0597a3a4d4ff
+		summarizeBy: none
+		sourceColumn: cliente_Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column habitacion_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a54fce90-d4b3-4186-8702-90127c25efc7
+		summarizeBy: none
+		sourceColumn: habitacion_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_cliente
+		dataType: int64
+		formatString: 0
+		lineageTag: fcc7eda6-712e-4737-9fab-da74ee337e46
+		summarizeBy: none
+		sourceColumn: tipo_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_inicio
+		dataType: int64
+		formatString: 0
+		lineageTag: 51e799de-b1a8-4360-9532-1bebee8ea42b
+		summarizeBy: sum
+		sourceColumn: fecha_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_fin
+		dataType: int64
+		formatString: 0
+		lineageTag: fe1caaa7-054c-4c46-b9ba-2a144c1472c7
+		summarizeBy: sum
+		sourceColumn: fecha_fin
+
+		annotation SummarizationSetBy = Automatic
+
+	column duracion_estadia
+		dataType: int64
+		formatString: 0
+		lineageTag: c6f790f9-8cc5-4ded-947c-0fc879bbb330
+		summarizeBy: sum
+		sourceColumn: duracion_estadia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition reserva = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    reserva_Sheet = Origen{[Item="reserva",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(reserva_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"cliente_Id", Int64.Type}, {"habitacion_id", Int64.Type}, {"tipo_cliente", Int64.Type}, {"fecha_inicio", Int64.Type}, {"fecha_fin", Int64.Type}, {"duracion_estadia", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

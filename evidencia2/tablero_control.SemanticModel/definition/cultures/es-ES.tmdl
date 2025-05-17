@@ -1,0 +1,3265 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "cliente.nombre_completo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente",
+			          "ConceptualProperty": "nombre_completo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre completo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre_completo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.correo_electronico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente",
+			          "ConceptualProperty": "correo_electronico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "correo electronico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "correo_electronico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.telefono": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente",
+			          "ConceptualProperty": "telefono"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "telefono": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.genero_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente",
+			          "ConceptualProperty": "genero_Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "genero id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "genero_Id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "genero identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "genero identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "genero identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "genero credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.nacionalidad_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cliente",
+			          "ConceptualProperty": "nacionalidad_Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "nacionalidad id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nacionalidad_Id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "nacionalidad identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "nacionalidad identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "nacionalidad identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "nacionalidad credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "escala_valoracion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "escala_valoracion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "escala valoracion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "escala_valoracion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "escala_valoracion.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "escala_valoracion",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "escala_valoracion.puntuacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "escala_valoracion",
+			          "ConceptualProperty": "puntuacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntuacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "escala_valoracion.descripcion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "escala_valoracion",
+			          "ConceptualProperty": "descripcion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripcion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "habitacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "habitacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "habitacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "habitacion.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "habitacion",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "habitacion.tipo_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "habitacion",
+			          "ConceptualProperty": "tipo_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "tipo identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "tipo identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "tipo identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "tipo credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "habitacion.numero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "habitacion",
+			          "ConceptualProperty": "numero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numero": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nacionalidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nacionalidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nacionalidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nacionalidad.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nacionalidad",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "nacionalidad.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nacionalidad",
+			          "ConceptualProperty": "nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "opinion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "opinion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opinion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estimation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "belief": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "judgement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "judgment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "attitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "outlook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "view": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "opinion.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "opinion",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "opinion.cliente_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "opinion",
+			          "ConceptualProperty": "cliente_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cliente id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cliente_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cliente identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "opinion.puntuacion_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "opinion",
+			          "ConceptualProperty": "puntuacion_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntuacion id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "puntuacion_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "puntuacion identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "puntuacion identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "puntuacion identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "puntuacion credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "opinion.comentario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "opinion",
+			          "ConceptualProperty": "comentario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comentario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "opinion.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "opinion",
+			          "ConceptualProperty": "fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "preferencia_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "preferencia_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preferencia cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "preferencia_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "preferencia_cliente.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "preferencia_cliente",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "preferencia_cliente.preferencia_especial_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "preferencia_cliente",
+			          "ConceptualProperty": "preferencia_especial_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "preferencia especial id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "preferencia_especial_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "preferencia especial identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "preferencia especial identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "preferencia especial identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "preferencia especial credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "preferencia_especial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "preferencia_especial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preferencia especial": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "preferencia_especial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "preferencia_especial.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "preferencia_especial",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "preferencia_especial.descripcion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "preferencia_especial",
+			          "ConceptualProperty": "descripcion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripcion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "reserva": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "reserva": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "reserva.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "reserva.cliente_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "cliente_Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cliente id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cliente_Id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cliente identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "reserva.habitacion_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "habitacion_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "habitacion id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "habitacion_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "habitacion identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "habitacion identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "habitacion identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "habitacion credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "reserva.tipo_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "tipo_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "tipo cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "reserva.fecha_inicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "fecha_inicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha inicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha_inicio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "reserva.fecha_fin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "fecha_fin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha fin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha_fin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fecha appendage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fecha limb": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fecha organ": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fecha member": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fecha flipper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fecha paddle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fecha projection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha propeller": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha rudder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fecha stabilizer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "reserva.duracion_estadia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reserva",
+			          "ConceptualProperty": "duracion_estadia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duracion estadia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duracion_estadia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_cliente.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_cliente",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "tipo_cliente.tipo_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_cliente",
+			          "ConceptualProperty": "tipo_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo cliente name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "tipo_habitacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_habitacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo habitacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_habitacion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_habitacion.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_habitacion",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "tipo_habitacion.descripcion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_habitacion",
+			          "ConceptualProperty": "descripcion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripcion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_servicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo servicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_servicio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_servicio.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_servicio",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "tipo_servicio.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_servicio",
+			          "ConceptualProperty": "nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_servicio.descripcion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tipo_servicio",
+			          "ConceptualProperty": "descripcion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripcion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "tipo_cliente_has_tipo_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_cliente": {
+			          "Target": {
+			            "Entity": "tipo_cliente"
+			          }
+			        },
+			        "tipo_cliente.tipo_cliente": {
+			          "Target": {
+			            "Entity": "tipo_cliente.tipo_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_cliente"
+			            },
+			            "Object": {
+			              "Role": "tipo_cliente.tipo_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_clientes_have_tipo_clientes"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "tipo_cliente"
+			            },
+			            "Name": {
+			              "Role": "tipo_cliente.tipo_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_clientes_are_names_IDs_of_tipo_clientes"
+			        }
+			      ]
+			    },
+			    "tipo_cliente_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_cliente": {
+			          "Target": {
+			            "Entity": "tipo_cliente"
+			          }
+			        },
+			        "tipo_cliente.id": {
+			          "Target": {
+			            "Entity": "tipo_cliente.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_cliente"
+			            },
+			            "Object": {
+			              "Role": "tipo_cliente.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_clientes_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "tipo_cliente"
+			            },
+			            "Name": {
+			              "Role": "tipo_cliente.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_tipo_clientes"
+			        }
+			      ]
+			    },
+			    "reserva_has_duracion_estadia": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "reserva.duracion_estadia": {
+			          "Target": {
+			            "Entity": "reserva.duracion_estadia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "reserva.duracion_estadia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_duracion_estadias"
+			        }
+			      ]
+			    },
+			    "reserva_has_fecha_fin": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "reserva.fecha_fin": {
+			          "Target": {
+			            "Entity": "reserva.fecha_fin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "reserva.fecha_fin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_fecha_fins"
+			        }
+			      ]
+			    },
+			    "reserva_has_fecha_inicio": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "reserva.fecha_inicio": {
+			          "Target": {
+			            "Entity": "reserva.fecha_inicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "reserva.fecha_inicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_fecha_inicios"
+			        }
+			      ]
+			    },
+			    "reserva_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "reserva.id": {
+			          "Target": {
+			            "Entity": "reserva.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "reserva.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Name": {
+			              "Role": "reserva.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_reservas"
+			        }
+			      ]
+			    },
+			    "preferencia_especial_has_descripcion": {
+			      "Binding": {
+			        "ConceptualEntity": "preferencia_especial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "preferencia_especial": {
+			          "Target": {
+			            "Entity": "preferencia_especial"
+			          }
+			        },
+			        "preferencia_especial.descripcion": {
+			          "Target": {
+			            "Entity": "preferencia_especial.descripcion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "preferencia_especial"
+			            },
+			            "Object": {
+			              "Role": "preferencia_especial.descripcion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preferencia_especial_have_descripcions"
+			        }
+			      ]
+			    },
+			    "preferencia_especial_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "preferencia_especial"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "preferencia_especial": {
+			          "Target": {
+			            "Entity": "preferencia_especial"
+			          }
+			        },
+			        "preferencia_especial.id": {
+			          "Target": {
+			            "Entity": "preferencia_especial.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "preferencia_especial"
+			            },
+			            "Object": {
+			              "Role": "preferencia_especial.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preferencia_especial_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "preferencia_especial"
+			            },
+			            "Name": {
+			              "Role": "preferencia_especial.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_preferencia_especial"
+			        }
+			      ]
+			    },
+			    "preferencia_cliente_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "preferencia_cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "preferencia_cliente": {
+			          "Target": {
+			            "Entity": "preferencia_cliente"
+			          }
+			        },
+			        "preferencia_cliente.id": {
+			          "Target": {
+			            "Entity": "preferencia_cliente.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "preferencia_cliente"
+			            },
+			            "Object": {
+			              "Role": "preferencia_cliente.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preferencia_clientes_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "preferencia_cliente"
+			            },
+			            "Name": {
+			              "Role": "preferencia_cliente.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_preferencia_clientes"
+			        }
+			      ]
+			    },
+			    "opinion_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "opinion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "opinion": {
+			          "Target": {
+			            "Entity": "opinion"
+			          }
+			        },
+			        "opinion.fecha": {
+			          "Target": {
+			            "Entity": "opinion.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "opinion"
+			            },
+			            "Object": {
+			              "Role": "opinion.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opinions_have_fechas"
+			        }
+			      ]
+			    },
+			    "opinion_has_comentario": {
+			      "Binding": {
+			        "ConceptualEntity": "opinion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "opinion": {
+			          "Target": {
+			            "Entity": "opinion"
+			          }
+			        },
+			        "opinion.comentario": {
+			          "Target": {
+			            "Entity": "opinion.comentario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "opinion"
+			            },
+			            "Object": {
+			              "Role": "opinion.comentario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opinions_have_comentarios"
+			        }
+			      ]
+			    },
+			    "opinion_has_puntuacion_id": {
+			      "Binding": {
+			        "ConceptualEntity": "opinion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "opinion": {
+			          "Target": {
+			            "Entity": "opinion"
+			          }
+			        },
+			        "opinion.puntuacion_id": {
+			          "Target": {
+			            "Entity": "opinion.puntuacion_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "opinion"
+			            },
+			            "Object": {
+			              "Role": "opinion.puntuacion_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opinions_have_puntuacion_ids"
+			        }
+			      ]
+			    },
+			    "opinion_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "opinion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "opinion": {
+			          "Target": {
+			            "Entity": "opinion"
+			          }
+			        },
+			        "opinion.id": {
+			          "Target": {
+			            "Entity": "opinion.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "opinion"
+			            },
+			            "Object": {
+			              "Role": "opinion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opinions_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "opinion"
+			            },
+			            "Name": {
+			              "Role": "opinion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_opinions"
+			        }
+			      ]
+			    },
+			    "nacionalidad_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "nacionalidad"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nacionalidad": {
+			          "Target": {
+			            "Entity": "nacionalidad"
+			          }
+			        },
+			        "nacionalidad.nombre": {
+			          "Target": {
+			            "Entity": "nacionalidad.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nacionalidad"
+			            },
+			            "Object": {
+			              "Role": "nacionalidad.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nacionalidads_have_nombres"
+			        }
+			      ]
+			    },
+			    "nacionalidad_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "nacionalidad"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nacionalidad": {
+			          "Target": {
+			            "Entity": "nacionalidad"
+			          }
+			        },
+			        "nacionalidad.id": {
+			          "Target": {
+			            "Entity": "nacionalidad.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nacionalidad"
+			            },
+			            "Object": {
+			              "Role": "nacionalidad.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nacionalidads_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "nacionalidad"
+			            },
+			            "Name": {
+			              "Role": "nacionalidad.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_nacionalidads"
+			        }
+			      ]
+			    },
+			    "habitacion_has_numero": {
+			      "Binding": {
+			        "ConceptualEntity": "habitacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "habitacion": {
+			          "Target": {
+			            "Entity": "habitacion"
+			          }
+			        },
+			        "habitacion.numero": {
+			          "Target": {
+			            "Entity": "habitacion.numero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "habitacion"
+			            },
+			            "Object": {
+			              "Role": "habitacion.numero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "habitacions_have_numeros"
+			        }
+			      ]
+			    },
+			    "habitacion_has_tipo_id": {
+			      "Binding": {
+			        "ConceptualEntity": "habitacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "habitacion": {
+			          "Target": {
+			            "Entity": "habitacion"
+			          }
+			        },
+			        "habitacion.tipo_id": {
+			          "Target": {
+			            "Entity": "habitacion.tipo_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "habitacion"
+			            },
+			            "Object": {
+			              "Role": "habitacion.tipo_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "habitacions_have_tipo_ids"
+			        }
+			      ]
+			    },
+			    "habitacion_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "habitacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "habitacion": {
+			          "Target": {
+			            "Entity": "habitacion"
+			          }
+			        },
+			        "habitacion.id": {
+			          "Target": {
+			            "Entity": "habitacion.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "habitacion"
+			            },
+			            "Object": {
+			              "Role": "habitacion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "habitacions_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "habitacion"
+			            },
+			            "Name": {
+			              "Role": "habitacion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_habitacions"
+			        }
+			      ]
+			    },
+			    "escala_valoracion_has_descripcion": {
+			      "Binding": {
+			        "ConceptualEntity": "escala_valoracion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "escala_valoracion": {
+			          "Target": {
+			            "Entity": "escala_valoracion"
+			          }
+			        },
+			        "escala_valoracion.descripcion": {
+			          "Target": {
+			            "Entity": "escala_valoracion.descripcion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "escala_valoracion"
+			            },
+			            "Object": {
+			              "Role": "escala_valoracion.descripcion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "escala_valoracions_have_descripcions"
+			        }
+			      ]
+			    },
+			    "escala_valoracion_has_puntuacion": {
+			      "Binding": {
+			        "ConceptualEntity": "escala_valoracion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "escala_valoracion": {
+			          "Target": {
+			            "Entity": "escala_valoracion"
+			          }
+			        },
+			        "escala_valoracion.puntuacion": {
+			          "Target": {
+			            "Entity": "escala_valoracion.puntuacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "escala_valoracion"
+			            },
+			            "Object": {
+			              "Role": "escala_valoracion.puntuacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "escala_valoracions_have_puntuacions"
+			        }
+			      ]
+			    },
+			    "escala_valoracion_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "escala_valoracion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "escala_valoracion": {
+			          "Target": {
+			            "Entity": "escala_valoracion"
+			          }
+			        },
+			        "escala_valoracion.id": {
+			          "Target": {
+			            "Entity": "escala_valoracion.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "escala_valoracion"
+			            },
+			            "Object": {
+			              "Role": "escala_valoracion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "escala_valoracions_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "escala_valoracion"
+			            },
+			            "Name": {
+			              "Role": "escala_valoracion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_escala_valoracions"
+			        }
+			      ]
+			    },
+			    "cliente_has_genero_id": {
+			      "Binding": {
+			        "ConceptualEntity": "cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.genero_id": {
+			          "Target": {
+			            "Entity": "cliente.genero_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.genero_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_genero_ids"
+			        }
+			      ]
+			    },
+			    "cliente_has_telefono": {
+			      "Binding": {
+			        "ConceptualEntity": "cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.telefono": {
+			          "Target": {
+			            "Entity": "cliente.telefono"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.telefono"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_telefonos"
+			        }
+			      ]
+			    },
+			    "cliente_has_correo_electronico": {
+			      "Binding": {
+			        "ConceptualEntity": "cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.correo_electronico": {
+			          "Target": {
+			            "Entity": "cliente.correo_electronico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.correo_electronico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_correo_electronicos"
+			        }
+			      ]
+			    },
+			    "cliente_has_nombre_completo": {
+			      "Binding": {
+			        "ConceptualEntity": "cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.nombre_completo": {
+			          "Target": {
+			            "Entity": "cliente.nombre_completo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.nombre_completo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_nombre_completos"
+			        }
+			      ]
+			    },
+			    "cliente_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.id": {
+			          "Target": {
+			            "Entity": "cliente.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Name": {
+			              "Role": "cliente.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_clientes"
+			        }
+			      ]
+			    },
+			    "tipo_servicio_is_named_id": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_servicio": {
+			          "Target": {
+			            "Entity": "tipo_servicio"
+			          }
+			        },
+			        "tipo_servicio.id": {
+			          "Target": {
+			            "Entity": "tipo_servicio.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "tipo_servicio"
+			            },
+			            "Name": {
+			              "Role": "tipo_servicio.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_tipo_servicios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_servicio"
+			            },
+			            "Object": {
+			              "Role": "tipo_servicio.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_servicios_have_ids"
+			        }
+			      ]
+			    },
+			    "tipo_habitacion_is_named_id": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_habitacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_habitacion": {
+			          "Target": {
+			            "Entity": "tipo_habitacion"
+			          }
+			        },
+			        "tipo_habitacion.id": {
+			          "Target": {
+			            "Entity": "tipo_habitacion.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "tipo_habitacion"
+			            },
+			            "Name": {
+			              "Role": "tipo_habitacion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_tipo_habitacions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_habitacion"
+			            },
+			            "Object": {
+			              "Role": "tipo_habitacion.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_habitacions_have_ids"
+			        }
+			      ]
+			    },
+			    "tipo_habitacion_has_descripcion": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_habitacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_habitacion": {
+			          "Target": {
+			            "Entity": "tipo_habitacion"
+			          }
+			        },
+			        "tipo_habitacion.descripcion": {
+			          "Target": {
+			            "Entity": "tipo_habitacion.descripcion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_habitacion"
+			            },
+			            "Object": {
+			              "Role": "tipo_habitacion.descripcion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_habitacions_have_descripcions"
+			        }
+			      ]
+			    },
+			    "tipo_servicio_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_servicio": {
+			          "Target": {
+			            "Entity": "tipo_servicio"
+			          }
+			        },
+			        "tipo_servicio.nombre": {
+			          "Target": {
+			            "Entity": "tipo_servicio.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_servicio"
+			            },
+			            "Object": {
+			              "Role": "tipo_servicio.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_servicios_have_nombres"
+			        }
+			      ]
+			    },
+			    "tipo_servicio_has_descripcion": {
+			      "Binding": {
+			        "ConceptualEntity": "tipo_servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_servicio": {
+			          "Target": {
+			            "Entity": "tipo_servicio"
+			          }
+			        },
+			        "tipo_servicio.descripcion": {
+			          "Target": {
+			            "Entity": "tipo_servicio.descripcion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_servicio"
+			            },
+			            "Object": {
+			              "Role": "tipo_servicio.descripcion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_servicios_have_descripcions"
+			        }
+			      ]
+			    },
+			    "cliente_has_nacionalidad": {
+			      "Binding": {
+			        "ConceptualEntity": "cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "nacionalidad": {
+			          "Target": {
+			            "Entity": "nacionalidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "nacionalidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_nacionalidads"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nacionalidad"
+			            },
+			            "Object": {
+			              "Role": "cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nacionalidads_have_clientes"
+			        }
+			      ]
+			    },
+			    "opinion_has_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "opinion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "opinion": {
+			          "Target": {
+			            "Entity": "opinion"
+			          }
+			        },
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "opinion"
+			            },
+			            "Object": {
+			              "Role": "cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opinions_have_clientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "opinion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_opinions"
+			        }
+			      ]
+			    },
+			    "preferencia_cliente_has_preferencia_especial": {
+			      "Binding": {
+			        "ConceptualEntity": "preferencia_cliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "preferencia_cliente": {
+			          "Target": {
+			            "Entity": "preferencia_cliente"
+			          }
+			        },
+			        "preferencia_especial": {
+			          "Target": {
+			            "Entity": "preferencia_especial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "preferencia_cliente"
+			            },
+			            "Object": {
+			              "Role": "preferencia_especial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preferencia_clientes_have_preferencia_especial"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "preferencia_especial"
+			            },
+			            "Object": {
+			              "Role": "preferencia_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "preferencia_especial_have_preferencia_clientes"
+			        }
+			      ]
+			    },
+			    "reserva_has_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_clientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "reserva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_reservas"
+			        }
+			      ]
+			    },
+			    "reserva_has_facturacion": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "facturacion": {
+			          "Target": {
+			            "Entity": "facturacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "facturacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_facturacions"
+			        }
+			      ]
+			    },
+			    "reserva_has_habitacion": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "habitacion": {
+			          "Target": {
+			            "Entity": "habitacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "habitacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_habitacions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "habitacion"
+			            },
+			            "Object": {
+			              "Role": "reserva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "habitacions_have_reservas"
+			        }
+			      ]
+			    },
+			    "reserva_has_tipo_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "reserva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "reserva": {
+			          "Target": {
+			            "Entity": "reserva"
+			          }
+			        },
+			        "tipo_cliente": {
+			          "Target": {
+			            "Entity": "tipo_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "reserva"
+			            },
+			            "Object": {
+			              "Role": "tipo_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservas_have_tipo_clientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_cliente"
+			            },
+			            "Object": {
+			              "Role": "reserva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_clientes_have_reservas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.0.0"
+			    }
+			  }
+			}
+		contentType: json
+

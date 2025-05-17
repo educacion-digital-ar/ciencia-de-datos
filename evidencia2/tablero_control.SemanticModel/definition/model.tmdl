@@ -1,0 +1,35 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-AR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["cliente","escala_valoracion","habitacion","nacionalidad","opinion","preferencia_cliente","preferencia_especial","reserva","tipo_cliente","tipo_habitacion","tipo_servicio","metodo_pago","estado_pago","facturacion"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table cliente
+ref table escala_valoracion
+ref table habitacion
+ref table nacionalidad
+ref table opinion
+ref table preferencia_cliente
+ref table preferencia_especial
+ref table reserva
+ref table tipo_cliente
+ref table tipo_habitacion
+ref table tipo_servicio
+ref table metodo_pago
+ref table estado_pago
+ref table facturacion
+ref table DateTableTemplate_c488e9f6-e673-4434-91f0-e2f81c975b7e
+ref table LocalDateTable_2185b465-f580-46b2-b17a-10871d499775
+
+ref cultureInfo es-ES
+

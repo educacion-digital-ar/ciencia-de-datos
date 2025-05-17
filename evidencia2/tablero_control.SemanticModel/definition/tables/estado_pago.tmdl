@@ -1,0 +1,35 @@
+table estado_pago
+	lineageTag: 0ddaa56e-bbde-45ae-97ec-5c6647bcc979
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: d25c3eb8-a97e-44c6-95d7-4dd20c486291
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: 89faa048-1c71-412f-bf8f-701e8533dd9e
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition estado_pago = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    estado_pago_Sheet = Origen{[Item="estado_pago",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(estado_pago_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"estado", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

@@ -1,0 +1,33 @@
+table tipo_cliente
+	lineageTag: 166b7ef4-66ec-4a11-b7db-a041d6ce1494
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: bd254662-e311-4acc-871d-42e719ade66a
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_cliente
+		dataType: string
+		lineageTag: 25b03c6b-ec61-4cc5-9a3b-d8736851ebb8
+		summarizeBy: none
+		sourceColumn: tipo_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tipo_cliente = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    tipo_cliente_Sheet = Origen{[Item="tipo_cliente",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(tipo_cliente_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"tipo_cliente", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

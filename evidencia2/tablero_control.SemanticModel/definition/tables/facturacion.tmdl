@@ -1,0 +1,95 @@
+table facturacion
+	lineageTag: 136d7f68-b855-4a8a-8d9a-d7021e9e45c1
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 2720f28c-6592-4c56-8a06-276c4aff70a3
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column reserva_Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 3aac02b1-ecb0-478d-8492-737ccf9c24b5
+		summarizeBy: none
+		sourceColumn: reserva_Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column monto
+		dataType: double
+		lineageTag: 7fff9b42-9c1b-4e97-891d-860058602c7b
+		summarizeBy: sum
+		sourceColumn: monto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fechaPago
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0ef7f00e-fc6d-4859-b3b8-b1827723d643
+		summarizeBy: none
+		sourceColumn: fechaPago
+
+		variation Variación
+			isDefault
+			relationship: 6e83b4ea-f171-4c04-b24d-47739b92725c
+			defaultHierarchy: LocalDateTable_2185b465-f580-46b2-b17a-10871d499775.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column metodo_pago_Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8659d20a-a008-4458-9d03-b7f057be3548
+		summarizeBy: none
+		sourceColumn: metodo_pago_Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_pago
+		dataType: int64
+		formatString: 0
+		lineageTag: bc9d25fa-d360-4a28-8320-0bf08d88bdc0
+		summarizeBy: none
+		sourceColumn: estado_pago
+
+		annotation SummarizationSetBy = Automatic
+
+	column mesAnio = FORMAT(facturacion[fechaPago], "MM-YYYY")
+		lineageTag: 26cd5472-3f1c-4462-b113-2196b5d2b31f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column servicio_consumido_id
+		dataType: string
+		lineageTag: ff15def2-ad27-46cf-bf09-d3c24d172f33
+		summarizeBy: none
+		sourceColumn: servicio_consumido_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition facturacion = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    facturacion_Sheet = Origen{[Item="facturacion",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(facturacion_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"reserva_Id", Int64.Type}, {"monto", type number}, {"fechaPago", type date}, {"metodo_pago_Id", Int64.Type}, {"estado_pago", Int64.Type}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Column9", "Column8"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

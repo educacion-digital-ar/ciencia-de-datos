@@ -1,0 +1,60 @@
+table opinion
+	lineageTag: 2dc33938-4af1-4774-9b9c-ab9b1eefd2cd
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 3cad37d9-943e-4932-a18d-3b2bd9cb36a0
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1242ff59-7b97-445d-a11a-f007edeb3a67
+		summarizeBy: none
+		sourceColumn: cliente_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntuacion_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 80c971e4-57cd-4f6d-8962-de61a72bff79
+		summarizeBy: sum
+		sourceColumn: puntuacion_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column comentario
+		dataType: string
+		lineageTag: 5529c078-70e6-4a49-8b7e-013040293343
+		summarizeBy: none
+		sourceColumn: comentario
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: int64
+		formatString: 0
+		lineageTag: 43e91143-e6a5-4e6c-982b-de85cb37900f
+		summarizeBy: sum
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	partition opinion = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    opinion_Sheet = Origen{[Item="opinion",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(opinion_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"cliente_id", Int64.Type}, {"puntuacion_id", Int64.Type}, {"comentario", type text}, {"fecha", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

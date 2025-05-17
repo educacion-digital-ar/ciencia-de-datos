@@ -1,0 +1,34 @@
+table preferencia_cliente
+	lineageTag: a022675e-71d7-4e76-9175-0c6391e6398e
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 008ac6d4-727b-4095-8d5f-b07097ec163d
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferencia_especial_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 395dd6e1-00e6-4e5c-8056-adc69b03324f
+		summarizeBy: none
+		sourceColumn: preferencia_especial_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition preferencia_cliente = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Cesia\Downloads\BD_HOTEL_INDIANA_GENERADO_200.xlsx"), null, true),
+				    preferencia_cliente_Sheet = Origen{[Item="preferencia_cliente",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(preferencia_cliente_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"preferencia_especial_id", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

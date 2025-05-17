@@ -1,0 +1,63 @@
+relationship AutoDetected_c79e1927-42dc-4479-8774-347fe1851024
+	fromColumn: opinion.cliente_id
+	toColumn: cliente.id
+
+relationship AutoDetected_3ed73294-c9e5-4830-9a8d-9081c4d628a9
+	fromColumn: reserva.cliente_Id
+	toColumn: cliente.id
+
+relationship AutoDetected_c0b18b71-c919-4915-bfbc-dc69d25c871f
+	fromColumn: cliente.nacionalidad_Id
+	toColumn: nacionalidad.id
+
+relationship AutoDetected_e38a1989-f6cb-4383-96e6-85b1dff6e9fd
+	fromColumn: reserva.habitacion_id
+	toColumn: habitacion.id
+
+relationship AutoDetected_eb075214-f6b1-4f24-874f-c0f35c98b169
+	fromColumn: preferencia_cliente.preferencia_especial_id
+	toColumn: preferencia_especial.id
+
+relationship AutoDetected_3fe0028f-91ba-4817-b5ad-d58d02af1d8d
+	fromColumn: reserva.tipo_cliente
+	toColumn: tipo_cliente.id
+
+relationship 6d74525e-41b0-d06e-ebcb-14f87b46f660
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: habitacion.id
+	toColumn: tipo_habitacion.id
+
+relationship 09c76792-2637-f8ea-a5f4-97d9983925dc
+	crossFilteringBehavior: bothDirections
+	fromColumn: preferencia_cliente.id
+	toColumn: cliente.id
+
+relationship 808435f3-e15e-09dc-7294-26b54ba160b9
+	isActive: false
+	fromColumn: opinion.puntuacion_id
+	toColumn: escala_valoracion.id
+
+relationship 6e83b4ea-f171-4c04-b24d-47739b92725c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: facturacion.fechaPago
+	toColumn: LocalDateTable_2185b465-f580-46b2-b17a-10871d499775.Date
+
+relationship AutoDetected_0c34955b-c55e-4536-984b-c0f403e9122a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: reserva.id
+	toColumn: facturacion.reserva_Id
+
+relationship AutoDetected_075a6dfb-6ada-483c-875a-63e64a343985
+	fromColumn: facturacion.metodo_pago_Id
+	toColumn: metodo_pago.id
+
+relationship AutoDetected_7ea1ae61-14d1-45f3-a7b2-fd1cbab1760b
+	fromColumn: facturacion.estado_pago
+	toColumn: estado_pago.id
+
+relationship 1492af05-3cac-a4f1-2b2c-b7a8afa43127
+	fromColumn: facturacion.servicio_consumido_id
+	toColumn: tipo_servicio.id
+
